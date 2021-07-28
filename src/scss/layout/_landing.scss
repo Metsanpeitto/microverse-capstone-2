@@ -1,0 +1,119 @@
+/**
+* landing.scss
+*
+* This file contains all the style of this simple application
+* the chosen minimalistic and retro style selected tries to
+* transmit playfulness and fun through 'hand written' like
+* fonts and boxes.
+*
+ Layout Landing  */
+
+.l-l-displayer {
+  width: 400px;
+  min-height: 200px;
+
+  .l-l-displayer-header {
+    justify-content: space-between;
+    display: flex;
+    padding-right: 5%;
+  }
+
+  .l-l-displayer-box {
+    width: 400px;
+    min-height: 300px;
+    transform: rotate(0deg);
+    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    overflow-x: hidden;
+
+    ul {
+      li {
+        padding-left: 5%;
+        background-color: $color-gray-light;
+        display: grid;
+        grid-template-columns: auto 20px 100px;
+      }
+
+      li:nth-child(odd) {
+        background-color: $color-gray-light;
+      }
+
+      li:nth-child(even) {
+        background-color: $color-white;
+      }
+    }
+  }
+}
+
+.l-l-add {
+  min-height: 200px;
+
+  .l-l-add-box {
+    margin-top: 10%;
+    display: grid;
+
+    .l-l-add-box-name {
+      margin-bottom: 5%;
+      padding-left: 5%;
+    }
+
+    .l-l-add-box-score {
+      padding-left: 5%;
+    }
+  }
+
+  .l-l-add-btn {
+    margin-top: 10%;
+  }
+}
+
+.l-l-banner {
+  display: grid;
+  position: fixed;
+  color: #222;
+
+  .l-l-banner-title {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 1% 2% 1% 95%/95% 1% 91% 1%;
+    transform: rotate(-2deg);
+    width: 60vw;
+    padding: 2%;
+    text-align: center;
+    display: none;
+  }
+}
+
+.visible {
+  display: block !important;
+}
+
+.fromLeft {
+  animation: fromLeft 2s ease-in-out;
+}
+
+.toRight {
+  animation: toRight 2s ease-in-out;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100vw) rotate(-6deg);
+  }
+
+  100% {
+    transform: translateX(1vw) rotate(-2deg);
+  }
+}
+
+@keyframes toRight {
+  0% {
+    transform: translateX(1vw) rotate(-2deg);
+  }
+
+  100% {
+    transform: translateX(100vw) rotate(-6deg);
+  }
+}
