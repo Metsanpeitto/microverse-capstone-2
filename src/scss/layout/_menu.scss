@@ -1,0 +1,113 @@
+.l-menu {
+  background-color: $color-yellow;
+  height: 100vh;
+
+  .l-menu-main {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(4, 30vh);
+    padding-top: 5vh;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+  
+    .l-menu-main-group {
+      display: grid;
+      grid-template-columns: auto auto;
+      position: absolute;
+      width: 100%;
+
+      &:nth-child(1) {
+        grid-row-start: 1;
+      }
+
+      &:nth-child(2) {
+        grid-row-start: 2;
+      }
+
+      &:nth-child(3) {
+        grid-row-start: 3;
+      }
+
+      &:nth-child(4) {
+        grid-row-start: 4;
+      }    
+
+      .l-menu-main-item {
+        position: absolute;
+        width: 45vw;
+        height: 200px;
+
+        .l-menu-main-item-img {
+          position: absolute;
+          transform: scale(0.6);
+          top: -35px;
+          z-index: 2;
+        }
+
+        .l-menu-main-item-shadow {
+          position: absolute;
+          top: 100px;
+          left: 50px;
+          width: 80px;
+          z-index: 2;
+        }
+
+        .l-menu-main-item-shape {
+          position: absolute;
+          z-index: 3;
+        }
+
+        .l-menu-main-item-shape-background {
+          position: absolute;
+          z-index: 1;
+        }
+
+        .l-menu-main-item-text {
+          position: relative;
+          top: 130px;
+          left: 50px;
+          width: 80px;
+          font-family: "Sansita", sans-serif;
+          font-size: 24px;
+          z-index: 3;
+        }
+
+        .img-left {
+          left: 10px;
+        }
+
+        .shape-left {
+          transform: rotate(180deg);
+        }
+
+        .background-left {
+          transform: rotate(180deg);
+        }
+
+        .img-right {
+          left: -60px;
+        }
+
+        .shape-right {
+          transform: rotate(0deg);
+        }
+
+        .background-right {
+          transform: rotate(0deg);
+        }
+      }
+
+      .item-left {
+        left: -15px;
+        grid-column-start: 1;
+      }
+
+      .item-right {
+        right: 25px;
+        grid-column-start: 2;
+      }
+    }
+  }
+}

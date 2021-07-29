@@ -7,113 +7,80 @@
 * fonts and boxes.
 *
  Layout Landing  */
-
-.l-l-displayer {
-  width: 400px;
-  min-height: 200px;
-
-  .l-l-displayer-header {
-    justify-content: space-between;
-    display: flex;
-    padding-right: 5%;
-  }
-
-  .l-l-displayer-box {
-    width: 400px;
-    min-height: 300px;
-    transform: rotate(0deg);
-    padding: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 5%;
-    overflow-x: hidden;
-
-    ul {
-      li {
-        padding-left: 5%;
-        background-color: $color-gray-light;
-        display: grid;
-        grid-template-columns: auto 20px 100px;
-      }
-
-      li:nth-child(odd) {
-        background-color: $color-gray-light;
-      }
-
-      li:nth-child(even) {
-        background-color: $color-white;
-      }
-    }
-  }
-}
-
-.l-l-add {
-  min-height: 200px;
-
-  .l-l-add-box {
-    margin-top: 10%;
-    display: grid;
-
-    .l-l-add-box-name {
-      margin-bottom: 5%;
-      padding-left: 5%;
-    }
-
-    .l-l-add-box-score {
-      padding-left: 5%;
-    }
-  }
-
-  .l-l-add-btn {
-    margin-top: 10%;
-  }
-}
-
-.l-l-banner {
+.l-landing {
+  font-family: "Skranji", cursive;
+  background-color: $color-yellow;
+  height: 100vh;
+  position: relative;
   display: grid;
-  position: fixed;
-  color: #222;
 
-  .l-l-banner-title {
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 1% 2% 1% 95%/95% 1% 91% 1%;
-    transform: rotate(-2deg);
-    width: 60vw;
-    padding: 2%;
-    text-align: center;
-    display: none;
-  }
-}
+  .l-landing-hero {
+    grid-row-start: 1;
+    padding-top: 10%;
+    height: 30vh;
 
-.visible {
-  display: block !important;
-}
+    &__title-1 {
+      color: $color-green-bright;
+      font-size: 64px;
+      margin-left: 5px;
+      padding-top: 18px;
+    }
 
-.fromLeft {
-  animation: fromLeft 2s ease-in-out;
-}
+    &__title-2 {
+      color: $color-purple-bright;
+      font-size: 64px;
+      margin-left: 27px;
+      padding-top: 24px;
+    }
 
-.toRight {
-  animation: toRight 2s ease-in-out;
-}
+    &__subtitle {
+      padding-top: 36px;
+      font-size: 24px;
+      text-align: center;
+      -webkit-text-fill-color: $color-white;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
 
-@keyframes fromLeft {
-  0% {
-    transform: translateX(-100vw) rotate(-6deg);
-  }
+    &__main {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-row-start: 2;
 
-  100% {
-    transform: translateX(1vw) rotate(-2deg);
-  }
-}
+      .l-landing-hero-main__image {
+        width: 100%;
+        transform: scale(1.4);
+        z-index: 1;
+      }
 
-@keyframes toRight {
-  0% {
-    transform: translateX(1vw) rotate(-2deg);
-  }
+      .l-landing-hero-main__image-shadow {
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(-40px) scale(1.8);
+      }
+    }
 
-  100% {
-    transform: translateX(100vw) rotate(-6deg);
+    &__action {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-row-start: 3;
+      position: absolute;
+      bottom: 0%;
+      height: 60px;
+      width: 100%;
+      justify-content: center;
+
+      .landing-text {
+        font-family: "Slackey", sans-serif;
+        font-size: 48px;
+        color: $color-red-bright;
+      }
+
+      .landing-image {
+        transform: rotate(-90deg);
+      }
+    }
   }
 }
