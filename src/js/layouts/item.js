@@ -31,9 +31,9 @@ const item = `<section class="l-item-detail">
         </section>        
         <section class="l-item-detail__footbar">
           <img class="footbar-background" src=${footBarBackground} alt="footbar-background" />
-          <img class="footbar-comments" src=${comments} alt="comments-button" />
+          <img id="btn-comments" class="footbar-comments" src=${comments} alt="comments-button" />
           <img class="footbar-star" src=${starLarge} alt="star-button" />
-          <img class="footbar-reserve" src=${reserve} alt="reserve-button" />
+          <img id="btn-reserve" class="footbar-reserve" src=${reserve} alt="reserve-button" />
         </section>
       </section>`;
 

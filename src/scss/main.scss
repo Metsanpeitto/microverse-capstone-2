@@ -50,7 +50,10 @@
                  |___1.4.1 landing
                  |
                  |
-                 |___1.4.2 menu             
+                 |___1.4.2 modal                   
+                 |
+                 |
+                 |___1.4.3 menu             
 
 
 */
@@ -63,6 +66,7 @@
 @import "components/inputs";
 @import "layout/item-detail";
 @import "layout/landing";
+@import "layout/modal";
 @import "layout/menu";
 
 * {

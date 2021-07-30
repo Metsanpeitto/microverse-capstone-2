@@ -16,7 +16,7 @@ const menu = `<section class="l-menu">
             <div class="l-menu-main-item item-left">
               <img src=${burger} alt="burger" class="l-menu-main-item-img img-left" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-left" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
+              <img id="burger" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
               <img src=${itemShapeBackground} alt="item-shape-background" class="l-menu-main-item-shape-background background-left" />
       
               <h6 class="l-menu-main-item-text">Burger</h6>
@@ -24,7 +24,7 @@ const menu = `<section class="l-menu">
             <div class="l-menu-main-item item-right">
               <img src=${tacos} alt="tacos" class="l-menu-main-item-img img-right" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-right" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
+              <img id="tacos" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
               <img src=${itemShapeBackground} alt="item-shape" class="l-menu-main-item-shape-background background-right" />
               <h6 class="l-menu-main-item-text">Tacos</h6>
             </div>
@@ -33,14 +33,14 @@ const menu = `<section class="l-menu">
             <div class="l-menu-main-item item-left">
               <img src=${sandwich} alt="burger" class="l-menu-main-item-img img-left" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-left" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
+              <img id="sandwich" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
               <img src=${itemShapeBackground} alt="item-shape" class="l-menu-main-item-shape-background background-left" />
               <h6 class="l-menu-main-item-text">Burger</h6>
             </div>
             <div class="l-menu-main-item item-right">
               <img src=${pizza} alt="tacos" class="l-menu-main-item-img img-right" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-right" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
+              <img id="pizza" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
               <img src=${itemShapeBackground} alt="item-shape" class="l-menu-main-item-shape-background background-right" />
               <h6 class="l-menu-main-item-text">Tacos</h6>
             </div>
@@ -49,14 +49,14 @@ const menu = `<section class="l-menu">
             <div class="l-menu-main-item item-left">
               <img src=${fries} alt="burger" class="l-menu-main-item-img img-left" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-left" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
+              <img id="fries" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
               <img src=${itemShapeBackground} alt="item-shape" class="l-menu-main-item-shape-background background-left" />
               <h6 class="l-menu-main-item-text">Burger</h6>
             </div>
             <div class="l-menu-main-item item-right">
               <img src=${hotdog} alt="tacos" class="l-menu-main-item-img img-right" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-right" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
+              <img id="hotdog" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
               <img src=${itemShapeBackground} alt="item-shape" class="l-menu-main-item-shape-background background-right" />
               <h6 class="l-menu-main-item-text">Tacos</h6>
             </div>
@@ -65,19 +65,18 @@ const menu = `<section class="l-menu">
             <div class="l-menu-main-item item-left">
               <img src=${doughnut} alt="burger" class="l-menu-main-item-img img-left" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-left" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
+              <img id="doughnut" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-left" />
               <img src=${itemShapeBackground} alt="item-shape" class="l-menu-main-item-shape-background background-left" />
               <h6 class="l-menu-main-item-text">Burger</h6>
             </div>
             <div class="l-menu-main-item item-right">
               <img src=${drinks} alt="tacos" class="l-menu-main-item-img img-right" />
               <img src=${shadow} alt="shadow" class="l-menu-main-item-shadow shadow-right" />
-              <img src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
+              <img id="drinks" src=${itemShape} alt="item-shape" class="l-menu-main-item-shape shape-right" />
               <img src=${itemShapeBackground} alt="item-shape" class="l-menu-main-item-shape-background background-right" />
               <h6 class="l-menu-main-item-text">Tacos</h6>
             </div>
-          </div>
-         
+          </div>         
         </section>
       </section>`;
 
