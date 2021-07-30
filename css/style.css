@@ -295,6 +295,13 @@ input {
   display: grid;
   grid-template-rows: 15vh 50vh 20vh 15vh;
 }
+.l-item-detail .close-item {
+  position: fixed;
+  width: 24px;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
 .l-item-detail .l-item-detail-image {
   position: fixed;
   height: 110vh;
@@ -310,14 +317,16 @@ input {
 }
 .l-item-detail .l-item-detail-title .l-item-detail-title-large {
   align-self: center;
-  font-size: 74px;
+  font-size: 58px;
   text-align: center;
+  letter-spacing: 0px;
+  text-transform: capitalize;
   z-index: 1;
 }
 .l-item-detail .l-item-detail-title .l-item-detail-title-price {
   align-self: end;
   text-align: end;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
   margin-right: 5%;
   z-index: 4;
@@ -331,7 +340,7 @@ input {
 }
 .l-item-detail .l-item-detail-main .l-item-detail-main-image .l-item-detail-main-image-main {
   position: absolute;
-  width: 90%;
+  max-width: 100%;
   margin-left: 5%;
   margin-right: 5%;
   bottom: 10vh;
@@ -383,6 +392,7 @@ input {
 }
 .l-item-detail__ingredients .ingredients-content {
   font-size: inherit;
+  line-height: 28px;
 }
 .l-item-detail__footbar {
   display: grid;
@@ -622,9 +632,10 @@ input {
   height: 200px;
 }
 .l-menu .l-menu-main .l-menu-main-group .l-menu-main-item .l-menu-main-item-img {
+  width: 200px;
   position: absolute;
   transform: scale(0.6);
-  top: -35px;
+  top: -15px;
   z-index: 2;
 }
 .l-menu .l-menu-main .l-menu-main-group .l-menu-main-item .l-menu-main-item-shadow {
@@ -645,14 +656,14 @@ input {
 .l-menu .l-menu-main .l-menu-main-group .l-menu-main-item .l-menu-main-item-text {
   position: relative;
   top: 130px;
-  left: 50px;
+  left: 40px;
   width: 80px;
   font-family: "Sansita", sans-serif;
   font-size: 24px;
   z-index: 3;
 }
 .l-menu .l-menu-main .l-menu-main-group .l-menu-main-item .img-left {
-  left: 10px;
+  left: -10px;
 }
 .l-menu .l-menu-main .l-menu-main-group .l-menu-main-item .shape-left {
   transform: rotate(180deg);
@@ -661,7 +672,7 @@ input {
   transform: rotate(180deg);
 }
 .l-menu .l-menu-main .l-menu-main-group .l-menu-main-item .img-right {
-  left: -60px;
+  left: -40px;
 }
 .l-menu .l-menu-main .l-menu-main-group .l-menu-main-item .shape-right {
   transform: rotate(0deg);

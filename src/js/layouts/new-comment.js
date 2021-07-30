@@ -1,4 +1,4 @@
-const newComment = `<section class="l-new-comment-modal">
+const newCommentLayout = `<section class="l-new-comment-modal">
         <section class="l-new-comment-modal-title">
           <h5 class="l-new-comment-modal-title-text">New Comment</h5>
         </section>
@@ -18,4 +18,4 @@ const newComment = `<section class="l-new-comment-modal">
         </section>
       </section>`;
 
-export default newComment;
+export default newCommentLayout;

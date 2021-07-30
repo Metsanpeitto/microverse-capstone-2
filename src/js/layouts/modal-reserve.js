@@ -1,6 +1,6 @@
 import modal from "../../images/modal.svg";
 
-const modalReserve = `<section id="modal-reserve" class="l-modal">
+const modalReserveLayout = `<section id="modal-reserve" class="l-modal">
         <img class="l-modal-background" src="${modal}" alt="main-image" />
         <h3 class="l-modal-title">Reservations</h3>
         <section class="modal-list">
@@ -41,4 +41,4 @@ const modalReserve = `<section id="modal-reserve" class="l-modal">
       </section>
 `;
 
-export default modalReserve;
+export default modalReserveLayout;

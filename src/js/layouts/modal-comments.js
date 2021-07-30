@@ -1,6 +1,6 @@
 import modal from "../../images/modalPurple.svg";
 
-const modalComments = `<section id="modal-comments" class="l-modal">
+const modalCommentsLayout = `<section id="modal-comments" class="l-modal">
         <img class="l-modal-background" src="${modal}" alt="main-image" />
         <h3 class="l-modal-title">Comments</h3>
         <section class="modal-list">
@@ -28,4 +28,4 @@ const modalComments = `<section id="modal-comments" class="l-modal">
 
 `;
 
-export default modalComments;
+export default modalCommentsLayout;

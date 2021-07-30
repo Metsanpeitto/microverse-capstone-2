@@ -1,4 +1,4 @@
-const reservations = `<section class="l-reservations-modal">
+const reservationsLayout = `<section class="l-reservations-modal">
         <section class="l-reservations-modal-title">
           <h5 class="l-reservations-modal-title-text">Reservations</h5>
         </section>
@@ -32,4 +32,4 @@ const reservations = `<section class="l-reservations-modal">
         </section>
       </section>`;
 
-export default reservations;
+export default reservationsLayout;

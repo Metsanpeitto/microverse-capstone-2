@@ -1,23 +1,23 @@
 import itemShape from "../../images/item-shape-large.png";
-import tacos from "../../images/tacosTr.png";
 import lines from "../../images/zigzag.svg";
 import starLarge from "../../images/star-large.svg";
 import starSmall from "../../images/star-small.svg";
 import comments from "../../images/comments-icon.svg";
 import reserve from "../../images/reserve-icon.svg";
 import footBarBackground from "../../images/footbar.svg";
+import close from "../../images/close.svg";
 
-import modal from "../../images/modal.svg";
-
-const item = `<section class="l-item-detail">
+const itemLayout = (item) => {
+  const template = `<section id="item" class="l-item-detail">
+       <img id='btn-close-item' class='close-item' src=${close} alt="item close"/>
        <img class="l-item-detail-image" src=${lines} alt="main-image" />
         <section class="l-item-detail-title">
-          <h2 class="l-item-detail-title-large">Tacos</h2>
-          <h5 class="l-item-detail-title-price">$4.50</h5>
+          <h2 class="l-item-detail-title-large">${item.name}</h2>
+          <h5 class="l-item-detail-title-price">$${item.price}</h5>
         </section>
         <section class="l-item-detail-main">
           <div class="l-item-detail-main-image">
-            <img class="l-item-detail-main-image-main" src=${tacos} alt="main-image" />
+            <img class="l-item-detail-main-image-main" src=${item.image} alt="main-image" />
             <img class="l-item-detail-main-image-shape" src=${itemShape} alt="main-image-shape" />
           </div>
           <div class="l-item-detail-main__stars">
@@ -26,8 +26,8 @@ const item = `<section class="l-item-detail">
           </div>
         </section>
         <section class="l-item-detail__ingredients">
-            <h6 class="ingredients-title">Ingredients:</h6>
-            <h6 class="ingredients-content">- Tortilla , Meat, Tomato</h6>
+            <h6 class="ingredients-title">Ingredients</h6>
+            <h6 class="ingredients-content">- ${item.ingredients}</h6>
         </section>        
         <section class="l-item-detail__footbar">
           <img class="footbar-background" src=${footBarBackground} alt="footbar-background" />
@@ -37,4 +37,7 @@ const item = `<section class="l-item-detail">
         </section>
       </section>`;
 
-export default item;
+  return template;
+};
+
+export default itemLayout;

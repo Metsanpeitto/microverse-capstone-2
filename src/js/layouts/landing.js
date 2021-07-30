@@ -2,7 +2,7 @@ import burgerIllustration from "../../images/burgerIllustration.png";
 import shadow from "../../images/shadowIllustration.png";
 import arrow from "../../images/down-arrow.svg";
 
-const layoutLanding = `<section class="l-landing">
+const landingLayout = `<section class="l-landing">
         <section class="l-landing-hero">
           <h1 class="l-landing-hero__title-1">RAPIDO!</h1>
           <h1 class="l-landing-hero__title-2">RAPIDO!</h1>
@@ -22,4 +22,4 @@ const layoutLanding = `<section class="l-landing">
         </section>
       </section>`;
 
-export default layoutLanding;
+export default landingLayout;
