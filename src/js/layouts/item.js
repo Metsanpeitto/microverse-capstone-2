@@ -8,6 +8,10 @@ import footBarBackground from "../../images/footbar.svg";
 import close from "../../images/close.svg";
 
 const itemLayout = (item) => {
+  let stars = 0;
+  if (item.stars) {
+    stars = item.stars;
+  }
   const template = `<section id="item" class="l-item-detail">
        <img id='btn-close-item' class='close-item' src=${close} alt="item close"/>
        <img class="l-item-detail-image" src=${lines} alt="main-image" />
@@ -22,7 +26,7 @@ const itemLayout = (item) => {
           </div>
           <div class="l-item-detail-main__stars">
             <img class="stars-img" src=${starSmall} alt="stars" />
-            <h6 class="stars-count">25</h6>
+            <h6 class="stars-count">${stars}</h6>
           </div>
         </section>
         <section class="l-item-detail__ingredients">
@@ -32,7 +36,7 @@ const itemLayout = (item) => {
         <section class="l-item-detail__footbar">
           <img class="footbar-background" src=${footBarBackground} alt="footbar-background" />
           <img id="btn-comments" class="footbar-comments" src=${comments} alt="comments-button" />
-          <img class="footbar-star" src=${starLarge} alt="star-button" />
+          <img id="btn-star" class="footbar-star" src=${starLarge} alt="star-button" />
           <img id="btn-reserve" class="footbar-reserve" src=${reserve} alt="reserve-button" />
         </section>
       </section>`;

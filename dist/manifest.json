@@ -1,14 +1,6 @@
 {
   "index.js": "automain.js",
-  "pizzaTr.png": "auto4e6bbc989922a58c812a.png",
-  "doughnutTr.png": "auto68e3250e1839fdf2a242.png",
-  "sandwichTr.png": "autoa8d615d921126d2fcfdc.png",
-  "burgerTr.png": "auto018609039102031cbcea.png",
-  "tacosTr.png": "auto63b01baf650bfc9cf620.png",
-  "hotdogTr.png": "autoefc8da2b4aeb9a8467dc.png",
   "burgerIllustration.png": "auto2f2f38bf4e4d98b3b294.png",
-  "frenchfriesTr.png": "auto422fd3ece598bd5465d5.png",
-  "drinkTr.png": "autoc7862bbde7b8d3b834f9.png",
   "reserve-icon.svg": "autoea34fa5ba72a2c7f6b08.svg",
   "item-shape-large.png": "autobdf2b48411ac9580a085.png",
   "comments-icon.svg": "autoe4ae60e58fb0d0432739.svg",
@@ -21,6 +13,7 @@
   "down-arrow.svg": "autofc437dff0ca8ba2d79a8.svg",
   "shadowIllustration.png": "autoda8732e5c38eb13a2406.png",
   "footbar.svg": "auto83d69bc168b8dfc1b0e7.svg",
+  "close.svg": "auto17a94979ad94080cbb0e.svg",
   "index.html": "autoindex.html",
   "zigzag.svg": "auto2566a09bdf2f4ac4a671.svg",
   "item-shape-background.svg": "auto0ae8cc030e3fa977f7cb.svg"

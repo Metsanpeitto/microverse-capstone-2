@@ -8,46 +8,9 @@ class Api {
   constructor() {
     this.fetchUrl = "https://microverse.abi.api.waldenberginc.com/api";
     this.postUrl =
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi";
+      "https://guarded-basin-44458.herokuapp.com/https://us-central1-involvement-api.cloudfunctions.net/capstoneApi";
     this.menu = [];
-    this.check();
-  }
-
-  /**         Checks if a app id is stored in local storage               */
-  appIdStored() {
-    this.found = false;
-    const appId = JSON.parse(window.localStorage.getItem("appId"));
-    if (appId) {
-      this.appId = appId;
-      this.found = true;
-    }
-    return this.found;
-  }
-
-  /**         Checks if this is the first time running the app             */
-  /**         if it is, creates a game score folder in the API             */
-  async check() {
-    const appStored = this.appIdStored();
-    if (appStored === false) {
-      await fetch(`${this.postUrl}/apps`, {
-        mode: "cors",
-        method: "POST",
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-          "Access-Control-Allow-Origin": "*",
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          const str = data.result; // These lines modify the received string
-          const str1 = str.replace("App with ID:", "");
-          const str2 = str1.replace("added.", "");
-          const str3 = str2.replaceAll(/\s/g, "");
-          this.appId = str3; // The formatted string is stored in local storage
-          window.localStorage.setItem("appId", JSON.stringify(this.appId));
-        });
-    }
+    this.appId = "9hvvjEsfhlPhvERRXvIH";
   }
 
   /**         Obtains the record of scores from the API          */
@@ -58,6 +21,78 @@ class Api {
         this.menu = json.body;
         return this.menu;
       });
+    return response;
+  }
+
+  async getLikes() {
+    const response = await fetch(
+      `${this.postUrl}/apps/${this.appId}/likes`
+    ).then((response) => response.text());
+    return response;
+  }
+
+  async postLikes(item) {
+    const str = JSON.stringify(item);
+    const response = await fetch(`${this.postUrl}/apps/${this.appId}/likes`, {
+      mode: "cors",
+      method: "POST",
+      headers: {
+        "Content-type": "text/plain",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: str,
+    }).then((response) => response.text());
+
+    return response;
+  }
+
+  async getComments(item) {
+    const response = await fetch(
+      `${this.postUrl}/apps/${this.appId}/comments?item_id=${item}`
+    ).then((response) => response.text());
+    return response;
+  }
+
+  async postComment(item) {
+    const str = JSON.stringify(item);
+    const response = await fetch(
+      `${this.postUrl}/apps/${this.appId}/comments`,
+      {
+        mode: "cors",
+        method: "POST",
+        headers: {
+          "Content-type": "text/plain",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: str,
+      }
+    ).then((response) => response.text());
+
+    return response;
+  }
+
+  async getReservations(item) {
+    const response = await fetch(
+      `${this.postUrl}/apps/${this.appId}/reservations?item_id=${item}`
+    ).then((response) => response.text());
+    return response;
+  }
+
+  async postReservation(item) {
+    const str = JSON.stringify(item);
+    const response = await fetch(
+      `${this.postUrl}/apps/${this.appId}/reservations`,
+      {
+        mode: "cors",
+        method: "POST",
+        headers: {
+          "Content-type": "text/plain",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: str,
+      }
+    ).then((response) => response.text());
+
     return response;
   }
 }

@@ -59,10 +59,16 @@ function displayItem(item) {
   const commentsBtn = document.getElementById("btn-comments");
   const reserveBtn = document.getElementById("btn-reserve");
   const closeBtn = document.getElementById("btn-close-item");
+  const startBtn = document.getElementById("btn-star");
 
   commentsBtn.addEventListener("click", () => {
     displayComments();
   });
+
+  startBtn.addEventListener("click", () => {
+    window.addStar(item);
+  });
+
   reserveBtn.addEventListener("click", () => {
     displayReserve();
   });
