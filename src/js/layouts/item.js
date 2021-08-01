@@ -8,9 +8,8 @@ import footBarBackground from "../../images/footbar.svg";
 import close from "../../images/close.svg";
 
 const itemLayout = (item) => {
-  let stars = 0;
-  if (item.stars) {
-    stars = item.stars;
+  if (item.stars === undefined) {
+    item.stars = 0;
   }
   const template = `<section id="item" class="l-item-detail">
        <img id='btn-close-item' class='close-item' src=${close} alt="item close"/>
@@ -26,7 +25,7 @@ const itemLayout = (item) => {
           </div>
           <div class="l-item-detail-main__stars">
             <img class="stars-img" src=${starSmall} alt="stars" />
-            <h6 class="stars-count">${stars}</h6>
+            <h6 id="stars-count" class="stars-count">${item.stars}</h6>
           </div>
         </section>
         <section class="l-item-detail__ingredients">

@@ -28,7 +28,7 @@ class Api {
     const response = await fetch(
       `${this.postUrl}/apps/${this.appId}/likes`
     ).then((response) => response.text());
-    return response;
+    return JSON.parse(response);
   }
 
   async postLikes(item) {
@@ -79,9 +79,11 @@ class Api {
   }
 
   async postReservation(item) {
+    console.log("Post");
+    console.log(item);
     const str = JSON.stringify(item);
     const response = await fetch(
-      `${this.postUrl}/apps/${this.appId}/reservations`,
+      `${this.postUrl}/apps/${this.appId}/reservations/`,
       {
         mode: "cors",
         method: "POST",
