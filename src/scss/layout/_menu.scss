@@ -143,10 +143,13 @@
     }
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1200px) {  
+      display: block ;
+  
+
     .l-menu-hero {
       padding-top: unset;
-      height: 25vh;
+      height: unset;
 
       &__title-1 {
         font-size: 124px;
@@ -167,9 +170,14 @@
     }
 
     .l-menu-main {
-      padding-top: 10vh;
-      grid-template-rows: unset;
+      height: 100%;
+      padding-top: 10px;
+      align-content: center;
+      transform: unset;
+      padding-bottom: unset;
+      grid-template-rows: 100%;
       grid-template-columns: repeat(4, 25vw);
+      overflow-y: hidden;
 
       .l-menu-main-group {
         grid-template-rows: auto auto;
@@ -253,3 +261,4 @@
     }
   }
 }
+

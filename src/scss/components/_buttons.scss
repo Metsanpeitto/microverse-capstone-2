@@ -21,9 +21,18 @@ button {
   border-style: solid;
   appearance: none;
   color: black;
-  font-family: 'Indie Flower', sans-serif !important;
+  font-family: "Indie Flower", sans-serif !important;
 
   &:active {
     transform: scale(0.8);
   }
+}
+
+.btn-1 {
+  border-radius: 12px;
+  border: unset;
+}
+
+.cancel {
+  background-color: $color-red-bright !important;
 }

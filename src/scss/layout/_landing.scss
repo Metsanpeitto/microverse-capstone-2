@@ -25,7 +25,7 @@
     &__title-2 {
       color: $color-purple-bright;
       font-size: 64px;
-      margin-left: 27px;
+      margin-left: 30%;
       padding-top: 24px;
     }
 
@@ -43,6 +43,55 @@
       width: 100%;
       display: grid;
       grid-row-start: 2;
+
+      .img-burger {
+        display: block;
+      }
+
+      .shadow-burger {
+        display: block;
+        transform: translate(60%, -200%);
+      }
+
+      .img-drink {
+        display: none;
+      }
+
+      .shadow-drink {
+        display: none;
+      }
+
+      .img-doughnut {
+        display: none;
+      }
+
+      .shadow-doughnut {
+        display: none;
+      }
+
+      .img-fries {
+        display: none;
+      }
+
+      .shadow-fries {
+        display: none;
+      }
+
+      .img-hotdog {
+        display: none;
+      }
+
+      .shadow-hotdog {
+        display: none;
+      }
+
+      .img-pizza {
+        display: none;
+      }
+
+      .shadow-pizza {
+        display: none;
+      }
 
       .l-landing-hero-main__image {
         width: 100%;
@@ -64,7 +113,7 @@
       grid-row-start: 3;
       position: absolute;
       bottom: 0%;
-      height: 60px;
+      height: 100px;
       width: 100%;
       justify-content: center;
 
@@ -118,61 +167,73 @@
       }
 
       .img-drink {
+        display: block;
         top: -50%;
         left: -5%;
       }
 
       .shadow-drink {
+        display: block;
         top: 100%;
         left: -2%;
       }
 
       .img-doughnut {
+        display: block;
         top: -35%;
         left: 15%;
       }
 
       .shadow-doughnut {
+        display: block;
         top: 125%;
         left: 19%;
       }
 
       .img-fries {
+        display: block;
         top: -50%;
         left: 30%;
       }
 
       .shadow-fries {
+        display: block;
         top: 95%;
         left: 35%;
         transform: scale(0.6);
       }
 
       .img-burger {
+        display: block;
         left: 45%;
       }
 
       .shadow-burger {
+        display: block;
         top: 120%;
         left: 50%;
       }
 
       .img-hotdog {
+        display: block;
         top: -50%;
         left: 65%;
       }
 
       .shadow-hotdog {
+        display: block;
         top: 120%;
         left: 72%;
       }
 
       .img-pizza {
+        display: block;
         top: -50%;
         left: 83%;
       }
 
       .shadow-pizza {
+        display: block;
         top: 100%;
         left: 88%;
         transform: scale(0.7);

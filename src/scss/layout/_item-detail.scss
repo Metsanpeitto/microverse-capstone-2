@@ -160,10 +160,11 @@
     margin-right: 25%;
     width: 50%;
     height: 80%;
-    grid-template-rows: 30% 40% 10%;
+    grid-template-rows: 30% 45% 10%;
 
     .l-item-detail-main__stars {
-      left: 5%;
+      bottom: 30%;
+      left: -20%;
     }
 
     .l-item-detail-title {
@@ -176,7 +177,7 @@
       .l-item-detail-title-price {
         text-align: center;
         width: 100%;
-        transform: translateX(11%) translateY(10px);
+        transform: translateX(25%) translateY(10px);
         font-size: 48px;
       }
     }
@@ -190,13 +191,13 @@
 
         .l-item-detail-main-image-main {
           width: 360px;
-          bottom: -5vh;
+          bottom: 5%;
           margin-left: 10%;
         }
 
         .l-item-detail-main-image-shape {
           width: 420px;
-          bottom: -30%;
+          bottom: -10%;
           margin: unset;
           transform: translateX(-15%);
         }
@@ -207,11 +208,37 @@
       .footbar-background {
         display: none;
       }
+
+      .footbar-comments {
+        width: 30%;
+        transform: translateY(-10%);
+      }
+
+      .footbar-reserve {
+        width: 30%;
+        transform: translateY(-10%);
+      }
+
+      .footbar-star {
+        width: 20%;
+        align-self: center;
+      }
+    }
+
+    .l-item-detail__ingredients {
+      transform: translateY(40%);
     }
 
     .l-item-detail-image {
       height: 130vh;
       top: -10vh;
+    }
+
+    .close-item {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      color: $color-golden;
     }
   }
 }
